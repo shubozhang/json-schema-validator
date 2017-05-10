@@ -6,6 +6,7 @@ import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.github.fge.jsonschema.core.report.ListProcessingReport;
 import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
+
 import java.io.IOException;
 
 
@@ -22,4 +23,5 @@ public class App {
 
         return report;
     }
+
 }
