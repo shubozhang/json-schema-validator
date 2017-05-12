@@ -1,0 +1,30 @@
+{
+  "username": 123,
+  "user_id": 1000,
+  "orders": [
+    {
+      "order_id": 101,
+      "order_date": "Jan 5, 2016 12:31:15 PM",
+      "price": 55.23
+    },
+    {
+      "order_id": 102,
+      "order_date": "Jan 15, 2016 12:11:15 PM",
+      "price": 155.23
+    }
+  ],
+  "cards": [
+    {
+      "issuer": "visa",
+      "card_number": 4321876501234567,
+      "expiration_date": "May 1, 2020",
+      "card_holder": "Aaron"
+    },
+    {
+      "issuer": "master",
+      "card_number": 5001876501234567,
+      "expiration_date": "Dec 31, 2022",
+      "card_holder": "Bob"
+    }
+  ]
+}

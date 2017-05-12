@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Customer",
+  "description": "JSON representation of a customer",
+  "type": "object",
+  "properties": {
+    "username": {"type": "string", "maxLength":16,"minLength":3},
+    "user_id": {"type": "integer", "minimum": 1000},
+    "orders": {
+      "type": "array",
+      "properties": {
+        "order_id": {"type": "integer"},
+        "order_date": {"type": "string", "format": "date-time"},
+        "price": {"type": "number"}
+      }
+    },
+    "cards": {
+      "type": "array",
+      "properties": {
+        "issuer": {"type": "string"},
+        "card_number": {"type": "integer"},
+        "card_holder": {"type": "string"},
+        "expiration_date": {"type": "string", "format": "date-time"}
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required":["username","user_id","order_date"]
+}

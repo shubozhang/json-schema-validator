@@ -18,16 +18,16 @@ public class Customer {
     @SerializedName("orders")
     private List<Order> orders;
 
+    @SerializedName("cards")
+    private List<Card> cards;
+
     public Customer(String name, int id) {
         this.name = name;
         this.id = id;
     }
 
 
-    @SerializedName("cards")
 
-
-    private List<Card> cards;
 
     public String getName() {
         return name;
